@@ -1,10 +1,12 @@
 function Header() {
 
-  return(
-    <div>
-      <h1>Hello World desde header</h1>
-      <p>holamundi</p>
-    </div>
+  return (
+    <>
+      <h1 className="font-black text-5xl text-center md:dw-2/3 mx-auto">
+        Seguimiento Pacientes {""}
+        <span className="text-indigo-600 ">Veterinaria</span>
+      </h1>
+    </>
   )
 }
 
