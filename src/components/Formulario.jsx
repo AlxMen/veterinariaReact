@@ -20,12 +20,9 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
     }
   }, [paciente])
 
-  const generarId = () => {
-    const random = Math.random().toString(36).substring(2)
-    const fecha = Date.now().toString(36)
+  const generarId = () => Date.now().toString(36) + Math.random().toString(36).substring(2)
 
-    return random + fecha
-  }
+  console.log(generarId())
 
   const handleSubmit = (e) => {
     e.preventDefault()
