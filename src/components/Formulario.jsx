@@ -22,8 +22,6 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
 
   const generarId = () => Date.now().toString(36) + Math.random().toString(36).substring(2)
 
-  console.log(generarId())
-
   const handleSubmit = (e) => {
     e.preventDefault()
     if ([nombre, propietario, email, fecha, sintomas].includes('')) {
